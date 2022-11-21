@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ant-tabs-tab {
+    color: #55ff00 !important;
+  }
+
+.cards {
+    background-color: #000000 !important;
+    color: #55ff00 !important;
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .subjects{
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    background-color: #55ff00;
+    width: 100vw;
+  }

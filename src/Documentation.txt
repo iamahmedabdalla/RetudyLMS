@@ -1,0 +1,881 @@
+
+                                           
+ 
+                
+
+An Independent Project Report 
+submitted in partial fulfilment 
+of the regulations governing 
+the award of the 
+[Computing], [2022]
+
+
+
+
+[RetudyLMS: Learning Management System]
+
+
+
+
+[AHMED ABDILAHI MUHUMED]
+[1001853051]
+
+
+
+Institute of Computer Science and Digital Innovation
+UCSI University
+[May, 2022]
+ 
+
+
+
+
+ 
+Authorship Declaration
+
+
+
+
+
+Except where reference is made in the references, this report contains no material published elsewhere or extracted in whole or in part from a dissertation or report presented by me for another degree or diploma.
+
+No other person’s work has been used without due acknowledgement in the content of the report.
+
+
+
+
+
+
+
+
+Signature: ______________
+                   [Student Name]
+	Date:_____17/06/2022__________
+
+
+ 
+Table of Contents
+Chapter 1	5
+Abstract	5
+INTRODUCTION	6
+1.1	Background of Study	6
+1.2	Background of the Problem	6
+1.3 Problem Statement	8
+1.3.1 Complicated User Interface	8
+1.3.2 Disorganized Communication	8
+1.3.3 Lack of Event Management System	10
+1.3.4 Mobile First Application	11
+1.4	Aim	12
+1. 5 Objectives	12
+Main Objectives	12
+Sub Objectives	12
+1.6 Justification	13
+1. 7 Project Approach	13
+1.8 Proposed Methodology	13
+1.9 Scope	13
+1.9.1 Targeted Users	14
+1.9.2 Covered Features	14
+1.9.2.1 Current Classes	14
+1.9.2.3 Current Tutorials	14
+1.9.2.4 Chat System	15
+1.9.2.5 Event System	15
+1.9.2.6 All Subjects	15
+1.9.2.7 Teacher Current Class	16
+1.9.2.8 Teacher Current Tutorials	16
+1.10 Deliverables	16
+1.11 Constrains	17
+1.12 Assumptions	17
+1.13 Resources	17
+Chapter 2	18
+Literature Review	18
+2.1 Introduction	18
+2.2 Electronic Learning Management	18
+2.3 Review of Related Article	18
+2.3.4 Implementation of Blackboard	19
+2.3.5 Implementation of Moodle	20
+2.3.6 Implementation of Canvas	21
+2.3.7 Findings	22
+2.4 Software Development Life Cycle	22
+2.5 Traditional & Agile Methodologies	22
+2.5.1 Traditional Methodologies	22
+2.5.2 Agile Methodologies	23
+2.5.3 The Nature of System Development	24
+2.5.3 The Traditional Development Model	24
+2.5.3.1 Waterfall Model	25
+2.5.3.2 Parallel Development	26
+Figure 5: Parallel Methodology Process	26
+2.5.3.3 Rapid Application Development (RAD)	26
+2.5.3.4 Spiral Mode	27
+2.5.6 The Agile Development Model	28
+2.5.6.1 Scrum Methodology	29
+2.5.6.2 Extreme Programming (XP) Methodology	30
+2.5.6.3 Feature Driven Development	31
+2.5.4 Findings	31
+Chapter 3	32
+Methodology	32
+3.1 Introduction	32
+3.2 Methodology: Parallel Development	32
+3.4 Gantt Chart	34
+References	36
+
+
+ 
+Chapter 1
+Abstract
+
+LMSs have progressed from simple delivery and management systems to critical components of modern organisational learning and performance improvement capabilities. In a changing and globally competitive world, a learning management system (LMS) can improve access and tracking of learning activities while also supporting organisational growth and development.
+In this research we will find what do UCSI students think are the major problems of the current CN and pedagogical aspects to be taken into consideration, when developing a new LMS especially with the new wave of adoption modern learning management system. Background research was carried out using a literature study to look for difficulties, solutions, and similar applications on the market to support the necessity for such a system as well as possible technologies or features that may be incorporated into the system design.
+ The proposed system will have three operators, lecturers, admins and students. The admin's job is to manage the application and make sure it runs well. Also Curriculum data, semester years, professors, students, and subjects are all under the administration's control. Students work on the assignments that the teacher has uploaded and download the material that the teacher has provided, while the teacher provides the material and assigns the assignments. Because schools are able to do more than merely teach in the classroom, the Learning Management System application can be utilised as a support for learning activities.
+ 
+INTRODUCTION
+1.1	Background of Study
+Learning management systems (LMS) have witnessed considerable growth in use in higher education institutions over the last decade, with various levels of support provided to staff and students during the deployment phases. This has offered the opportunity for rich learning environments based on social constructivist theories that are accessible to all students, at least in theory.
+Because of the rapid progress of information technology, electronic-based learning is becoming more popular. E-learning includes a variety of benefits, consist of the ability for students to share knowledge and at any time can access learning resources, as well as evaluations that may assess students' understanding of subjects. Students are supposed to improve their comprehension of the notion of learning information under these circumstances. E-learning may teach students technological independence and provide them hands-on experience with it. Furthermore, Through numerous tasks, discussion forums, and other activities, teachers can use e-learning to keep track of their students. behaviour, allowing students' personalities to be described through e-learning [1]. 
+This study examines the issues that students have in the present CN in order to justify the necessity for a better system. A necessary application to control the problem will be implemented in the future.
+1.2	Background of the Problem
+In the modern period, higher education institutions face significant social, economic, and technical changes that will inadvertently alter students' educational experiences. Canvas, Moodle and Blackboard are just a few of the LMS or e-learning platforms most universities use. The usage of LMS is becoming even bigger for Institutions unlike the past which only used like assistance tool. But recently LMS’s have evolved to more advanced concepts like having different larger modules providing tools like Content Management System that can store all the courses materials, exam and grading system.
+
+	Despite the LMS popularity in higher education, an increasing number of lecturers and students are dissatisfied with LMS because it focused on faculty’s course delivery and administration instead of student learning process and activities [2]. Most LMS’s are also rigid and unsuitable for novel methods to educating and teaching that go beyond the course and instructor-cantered perspectives of the past [3].
+
+	Some of the problems UCSI University’s LMS include the lack of event management system which is crucial part of UCSI students. Without dedicated section of events in theCN students must seek alternative ways to find events, mainly through theCN Posts, Facebook pages and Outlook mail. As most these applications are not specifically designed for event, it led to increased time in finding suitable event. Not only this is a problem to students it is also inefficient to event managers as the process is very tiring. 
+	Apart from that, another major feature current CN does not fully provide is the ability to communicate, although this feature is available, but it is poorly designed and deployed. Since students are taking assignments all the time, they need a proper way to communicate with each other, which is way they chose to use other text messaging services like WhatsApp, Telegram or Teams, to make their communication more effective. Some of the problems with these apps include loss of privacy, also these apps are not designed for collaborative environment.
+
+
+1.3 Problem Statement
+1.3.1 Complicated User Interface
+The user interface is critical for achieving consumer expectations and guaranteeing the site's correct operation. A well-designed user interface allows successful interaction between the user and the programme, app, or machine through contrasting images, clean design, and responsiveness.
+The user interface design of an LMS is what determines a platform's first impression. The user's experience determines whether or not they return to the LMS. A solid UI/UX design satisfies the LMS owner's commercial aims while also providing a high-quality learning tool to the end-user. A simple, intuitive, aesthetically appealing and light platform enables learners to have a better user experience even when bandwidth is limited.
+There are two sorts of users in learning management systems: learners and instructors. To make the educational process effective, each user type requires a unique interface and set of features. A good LMS is well-suited to provide learners and instructors with the capabilities they desire. According to new research showed that when it comes to educational effectiveness, system quality typically matters more to learners than the course itself [3].
+Although theCN presents clear interface it is not easy and presentable to navigate, it contains a lot of unnecessary tools and functionalities which complicates the user interface. 
+
+1.3.2 Disorganized Communication
+Doing tasks in university or college is an required activity from which no student may be spared. Apart from meeting face-to-face to discuss and work on the assignment at a mutually agreed-upon time and place, students will work remotely or in their dorms and chat via the web, most commonly through text messaging applications. Apart from that, students find it difficult to communicate with teachers about a problem or schedule an appointment.
+	As a result, their communication quality will deteriorate to the point where the assignment's quality will suffer. This is particularly true for coding activities, where effective communication is critical for the team to build fully working, sophisticated software, and where a small mistake could spell disaster for the project. 
+Students have to move their discussions entirely online, using social media or text messaging apps like WhatsApp and Telegram, which are famous among students for discussing coursework. As a result, the abovementioned communication issues will be widespread in the current circumstance.
+1.3.3 Lack of Event Management System
+Traditionally, event management has had a lot of issues and problems as the planning process progressed. The lack of a related system causes a lot of wasted time on some tasks and necessitates a lot of human work at every phase of the planning process. A new generation of information technology has evolved in recent years, and every industry has been moving forward with the help of computers and systems.
+Big events that demand event planning comprise conferences, conventions, concerts, and trade exhibits, and festivals. The management process includes identifying the target audience, developing the event concept, organizing the overall logistics of the event, and managing the event as a whole.
+The problem most of the student have been that there is not centralized system for all the events happening in the university online or offline, most of the events can be found in the TheCN, Facebook and Outlook. The problem with TheCN is that the event is entirely based on its algorithm to show you the event or not. Although Facebook and Outlook also have a large number of events but the problem is students must go there and check and open every event to check whether they would like to attend it or not. Another major problem students face is that if student wants to create and event, they don’t know the process and the regulations needed to do so.
+ 
+1.3.4 Mobile First Application
+LMS is used to track, manage and deliver educational content for students. However, only a tiny percentage of students use those features since they prefer to communicate with their phones via calls or other social media platforms.
+An LMS, as we all know, provides learners with on-the-go learning and an all-around learning experience. Because a cloud or SaaS-based LMS may be scaled up and down as needed, it performs as well as the desktop version. Students may access course content on their mobile devices at any time and from anywhere with a mobile-first LMS. Because students are more likely to utilise technology and are always carrying a mobile phone, it is simpler for them to obtain instructional information anytime they want. Therefore, by using a mobile-first LMS, they can ensure that students have access to the course content all the time. 
+A mobile learning management system (LMS) is more than simply an online version of a document management. It's designed to be dynamic and entertaining so that readers may retain and recall information when they need it. 
+Users are more likely to pay attention to the information when the course module has several interactive features. Furthermore, online course modules are frequently created in the form of brief nuggets that emphasise key themes. This is done to allow readers to skim over the article quickly and retain the information.
+ 
+
+1.4	Aim
+The aim of this project is to develop a user friendly and fully functional learning management system. The market needs modern and simple learning management system that is also user friendly, most of the institutions does not need LMS with a large number of features that will mess up the user interface. Learning management system needs to be easy and simple to use. Apart from that, another main thing is to conduct for you to gain insight on how teachers students see the problems of the current theCN. Also, to develop application based on the problems most UCSI students’ phase most notably event management system to increase student participation in extracellular activities.
+
+1. 5 Objectives
+Main Objectives
+	The main objective of this research is figure out what do UCSI University students think of the current CN and what are the problems they face.
+Sub Objectives
+	Conduct interview to gain qualitative insight into students and teacher’s perspectives and recommendations in relation to the problems of theCN.
+	To develop an application that gives students remarkable communicative power in order to facilitate collaborative e-learning.
+	To provide event management system for students to improve participation rate and streamline the event workflow 
+1.6 Justification
+This specific topic was chosen very because the main aim is to enhance and further modernize the learning management system in, I believe that there is still room for improvement with this specific topic to be able to fully maximize capabilities. Also, to improve the user interface because it seems that our CN feels outdated in terms of design. I believe the learning management systems are crucial for educational institutions and that is why these improvements are justified. Adding chatting system to improve the collaborative environment for students is must for efficient learning management system. I believe that learning management system would increase the efficiency of the students and teachers as long as there are more features designed in a proper way.
+
+1. 7 Project Approach
+
+On the basis of the highlighted problem, it is more appropriate to build the defined e-learning platform using web technologies. On the platform, mobile development would be pointless. Web application development, in contrast to desktop application development, does not require consideration of the user's operating system, resulting in a more uniform and easier-to-implement programme.
+
+1.8 Proposed Methodology
+In software development, methodology is critical for reducing time to market by following a stage process structure and concepts while preventing future challenges. This project will be completed using parallel development.
+1.9 Scope 
+
+1.9.1 Targeted Users
+People in the universities who use need learning Management System are the main target of this system. A side from that second biggest target users are professors and universities who are in charge of subjects and tasks
+1.9.2 Covered Features
+
+1.9.2.1 Current Classes
+
+Current Class summarises the classes the student is taking in the current semester displaying each subject in card type, containing all the necessary information needed by the student. Moreover, some of the details these cards includes the name of the subject, the name of the lecturer, profile, subject location, subject code, and more. Apart from that, these cards also can be navigated into retrieving more information about the subject like the lecture notes of the subject, tutorials, quizzes, and even the files the student uploaded.
+1.9.2.3 Current Tutorials
+
+Current Tutorials also works like the Current Classes they also makes tutorial submission easier for student, they can also be seen like a card showing the tutorial name, tutorial title and the due date, also there is button that can be submitted the tutorial without the need to go to the submission link. 
+1.9.2.4 Chat System
+This chat system will help students communicate more easily and effectively as they don’t need to give their private numbers to anyone, the chat system will also serve as a catalyst for positive debate among group members while they work on the project together. Users can communicate in the appropriate channel, and the conversation history will be available to them at all times.
+
+1.9.2.5 Event System
+This system keeps track of events on campus so that students may be notified and boost their engagement in non-academic activities like sports and the arts. Events or university programmes are important for students, and each institution has its own clubs and organisations in order for students to be well-rounded. 
+The Event system allows students to view all the events going on in the university, they can sort it by date or location, they can select which type of events displayed in the cards, these card type events also follows the design layout of the system to keep the consistence of the application. Students can view whether the event is full or not without looking at details of the event. Some of the more important events can be displayed as bigger card so it can be seen easily to attract more people.
+
+1.9.2.6 All Subjects
+In this page, students can see all the subject they have taken in the past in visually appealing way. When students or teachers visit this page they can see all the subjects, they can also select each subject to view lecture notes of a subject, tutorials in the past, quizzes they have taken, or even the materials they have uploaded in the past.
+ 
+
+
+1.9.2.7 Teacher Current Class
+Current Classes in the current semester can also be seen by the teacher in new form that makes teachers see current classes a lot easier, teachers can edit these subject cards, they can also manipulate data inside each subject. 
+1.9.2.8 Teacher Current Tutorials
+Current Tutorials in the day is also in the Current Classes tab, Todays tutorials are in card type form, teacher can view who submitted the tutorials without clicking into more details, and to download details about the tutorial teacher can click more info and more information will be displayed to the teacher, these date including list of students, student ID’s, date of submission, who submitted and not.
+1.10 Deliverables
+The outcome that will be achieved upon completion of this project includes:
+1.	Students can do
+a.	Authentication
+i.	Login
+ii.	Logout
+b.	Current Classes
+i.	View Current Classes in the current semester
+ii.	Navigate each subject materials more easily
+1.	Overview Section
+2.	Form Section
+3.	Uploaded Materials Section
+iii.	Easily Submit files more easily
+c.	Messenger
+i.	Chat with other students
+ii.	Chat with the lecturers
+iii.	Each Subject has its Chatting service
+d.	Events
+i.	View events
+ii.	Search Events
+iii.	Sort events based on
+1.	Categories
+2.	Date
+e.	All Subjects
+i.	View all subjects you have taken before
+2.	Teacher can do
+a.	Create Subjects
+i.	Upload course materials
+b.	Upload Tutorials
+c.	Shows analytical information of students participation
+3.	Admin can do
+a.	Add Users
+i.	Admin
+ii.	Teacher
+iii.	Students
+b.	Create Faculties
+c.	View analytics about
+i.	Total students
+ii.	Total teacher
+iii.	Total events
+iv.	Tutorial Submission
+
+1.11 Constrains
+The constraints associated with the development of this project are as follows: -
+1.	All the code used will be built from the ground, so there will be no open source code that will be copied, this approach will make the project take longer to develop.
+2.	Some of the data used in the system will be dummy data
+3.	There will be no mobile app for this application because it will take more resources, instead it will be mobile first app, which means it is a website but looks like an app when using a phone
+
+1.12 Assumptions
+1.	Students should know how to use technologies and know how to access the internet and websites
+2.	Students should have prior experience in other learning management systems or it take a little bit more time to get familiar with the system
+3.	Students should speak English as it will the main language used in the system
+
+1.13 Resources
+1.	Hardware Requirements
+a.	MacBook Pro M1
+b.	Ram: 8GB
+c.	Storage: 256GB
+2.	Software Requirements
+a.	MacOS Monterey
+b.	Word
+c.	Notion
+d.	Visual Studio Code
+e.	Postman
+f.	MongoDB Compass
+g.	Adobe XD
+h.	GitHub Cloud
+i.	Draw.io
+
+ 
+
+Chapter 2
+Literature Review
+2.1 Introduction
+	
+This section looks into the themes that are critical to the project's title in order to accommodate a clearer understanding of why such research and execution are required. Background and scholar adaptations, as well as an e-Learning evaluation, are divided into two sections of the literature review. Next, we'll go into the history of collaborative coding and what it has to do with students. The final field to be investigated is the software development process.
+
+2.2 Electronic Learning Management
+	
+In the twenty-first century, digitalization has evolved and been regularly updated. This has inevitably led to the emergence of e-Learning, in which individuals all over the world use the power of the World Wide Web to exchange research, knowledge, and information in a variety of forms. In today's society, e-learning has become a hot issue.
+2.3 Review of Related Article
+
+There are three types of learning management systems (LMS): learning skills tools, communication tools, and productivity tools [5].  
+ 
+
+2.3.4 Implementation of Blackboard
+
+The Blackboard Learning System is a market-leading virtual learning environment software system. Students and teachers can participate in online classrooms using Blackboard, a Web-based learning management system. The Blackboard Learning System, on the other hand, is a comprehensive and adaptable e-Learning software platform that includes a full course administration system. The features that we use in this system are listed below [6] . 
+1.	Creating Course: a simple procedure. The wizard allows instructors to finish the initial setup of a Course in one simple step.
+2.	Course management: enables professors to make changes to any aspect of the course.
+3.	Course content: permits professors to add articles, videos, assignments, materials, and other stuff to the site.
+4.	Calendar: can be used to keep track of assignment and exam due dates.
+5.	Assessments and Surveys: teachers can use this feature to offer online, automatically scored assessments and surveys.
+6.	Assignments: Assignments may be uploaded and students can submit assignments online.
+7.	Availability Control: Instructors may construct bespoke learning paths for students by deciding when they can access information, conversations, exams, assignments, and other learning activities.
+8.	Grade centre: Stores student performance data, with custom grading scales, grade weighting, item analysis, and numerous grade centre views available.
+ 
+Figure 1: Blackboard Dashboard
+
+2.3.5 Implementation of Moodle
+
+	 Moodle is a free course management system (CMS) that uses well-known pedagogical ideas to help educators create effective online learning communities. Under the rules of the GNU Public License, Moodle is accessible as free Open Source software. Moodle is copyrighted, but you can copy, use, and modify it as long as you promise to: make the source code available to others; not change or remove the original licence and copyrights; and use the same licence for any derivative work 
+.
+ 
+Figure 2: Moodle Dashboard
+ 
+2.3.6 Implementation of Canvas
+
+	 Canvas is one of the most advanced LMS for teaching and learning. The goal of this programme is to enhance the overall online learning experience. Documenting information, tracking student progress, and grading pupils are all possible using the LMS platform. As a result, the Canvas application appears to be well-suited to managing learning materials in a thorough manner..
+Canvas is similar to other open-source software programmes that can be found online. Canvas, on the other hand, has several different benefits. With the use of a Cloud-based learning management system, teachers and students may quickly transmit information without worrying about data loss..
+Canvas includes several beneficial tools for collaboration and virtual learning in its online courses because visual material is such an important aspect of virtual learning.
+ 
+Figure 3: Canvas Dashboard
+ 
+2.3.7 Findings
+
+	 After evaluating some previous work, it was discovered that the capacity to optimise learning quality and construct an interactive learning system is one of the most important elements of a learning management system. 
+
+2.4 Software Development Life Cycle
+
+	 A software development life cycle (SDLC) model is a conceptual framework that outlines the actions and procedures that must be followed during a software development project. The process may be carried out using a variety of development approaches, each of which has its own lifetime. Software development process model is another name for this concept. However, selecting them would not be a simple or random operation, as several variables must be considered before a selection can be made. As illustrated in the diagram below, software engineering technique is divided into two categories: old & classical approaches that date back to the early days, and modern & popular methodologies [7].
+2.5 Traditional & Agile Methodologies
+	
+In this section, we will compare and contrast the features of agile and traditional software techniques.. A significant distinction between agile and heavy methodologies is the ability to adjust to project changes. Traditional methodologies are stagnant and do not adapt to changes, whereas agile procedures are flexible. So, in this section, we'll go over how each methodology is used [7].
+	The flexibility component is the main distinction between traditional and agile techniques. If a big change is required, the team under an agile methodology does not freeze its work process; instead, it determines how to better handle changes that arise during the project. The verification process occurs significantly earlier in the development phase of the agile method. On the other side, heavyweight techniques lock in product requirements and prohibit modification. It is based on the use of a predictive technique and the definition and documentation of a consistent set of requirements at the outset of a project.
+2.5.1 Traditional Methodologies
+
+Traditional approaches are plan-driven, with work starting with the elicitation and documentation of a comprehensive set of requirements, then moving on to the development and review of architectural and high-level designs. The "heavyweight" moniker comes from the system's hefty components. Some practitioners have been frustrated by this process-centric approach to software development, and when change rates are still low, it can be tough to implement. As a result, in order to accept and respond to the impending shift, several consultants have established their own approaches and practises.
+2.5.2 Agile Methodologies
+
+The term "agile" was coined in 2001 by a group of 17 process experts in the field who met to explore potential improvements in software development. They coined the term "agile" to describe their techniques because they shared many qualities. "Light and sufficient" is the definition of agile. The "Agile Alliance" and its agile software development culture were created as a result of this gathering.  [8]. 
+Agile reveals faults in the organisation. Agile techniques, unlike traditional methods, emphasise iterations rather than phases. Agile practises include short iterative cycles, small/short releases, simple design, refactoring continuous integration, and a team's implicit understanding rather than documentation.
+ 
+2.5.3 The Nature of System Development
+
+The task of software development is quite complex. Variable needs, the necessity for specialised and varied people, evolving and complex software development and deployment technology, and the challenges of managing staff who cope with such complexity on a daily basis are just a few of its characteristics. The inherent complexity of undertaking systems development initiatives usually overwhelms organisations.
+As a result, system development procedures may be perceived as difficult, unpredictable, and ill-defined. To put it another way, these processes are unrepeatable because they lack well-defined inputs and outputs [8].
+2.5.3 The Traditional Development Model
+
+Discipline methodologies, such as the Waterfall technique, have almost always been used to construct projects. This decision appears to be based on "hard systems thinking," which holds that issues can be precisely characterised, processes can be optimised, and outcomes can be predicted with certainty. To measure and control deviations in the development life cycle, much upfront preparation is required..
+ 
+2.5.3.1 Waterfall Model
+
+	The waterfall approach encourages a logical flow through the use of separate stages. Before the next phase can begin, each phase must fulfil a certain set of activities and deliverables. The phases are often referred to differently, but the main notion is that the first phase attempts to capture What the system will perform, as well as its hardware and software needs, and the second phase specifies How it will be developed. Programmers begin generating code in the third stage, the testing was done in the stage 4, and the final stage concentrates on tasks such as instruction and complete documentation.
+ Figure 4: Waterfall Methodology Process
+
+A waterfall model is usually divided into six sections. The first step is the requirement gathering stage, which involves employing rigorous requirement gathering methods such as interview sessions and observation to obtain a detailed, via key demands and scope, from the assigning clients with no ambiguity. Customers must also be able to articulate their desires. A waterfall project's first phase demands precise and exhaustive documentation. The waterfall is inflexible.
+If any revisions are required, the entire operation will be restarted at the very least. The documentation is fairly long and complicated because each element of the method is finished before going on to the next. On the other side, the documentation process takes a long time. The Waterfall methodology is suitable for projects when the needs are more likely to remain stable and unchanging. It's also suitable for small, uncomplicated projects, as long as the needs are clearly clear. 
+
+2.5.3.2 Parallel Development
+
+In contrast, parallel development is a variant of the Waterfall paradigm. When a project demands distinctive development for speedier delivery, parallel development is crucial. The goal of parallel development is to bridge the gap between analysis and implementation. It separates the process into multiple distinct subprojects that can be implemented at the same time, rather than executing the design and implementation in order. The several subprojects will eventually be integrated to produce the final project . [9].	
+ 
+Figure 5: Parallel Methodology Process
+
+2.5.3.3 Rapid Application Development (RAD)
+
+	 Users are encouraged to take part in the prototyping process in order to test approaches and change needs. Following the definition of the project's scope in the Requirements Planning phase, users collaborate with system analysts to create prototypes in the User Design phase. During the construction process, users provide direct feedback. Finally, end users are instructed on how to utilise the product as it is implemented during the Cutover phase.
+ 
+Figure 6: RAD Methodology Process
+2.5.3.4 Spiral Mode
+
+	 To take advantage of both top-down and bottom-up techniques, the spiral model integrates design and prototype aspects. The spiral model can help to reduce risk by breaking the project into smaller segments and developing the high-risk aspects of the project first during its conception. A prototype is a software version that is developed in stages until a fully functional production version is created. The standard spiral model iterations or phases are planning, risk analysis, development/engineering, and assessment. If the project is not completed at the end of each phase, the next iteration will begin.
+	The spiral model is prohibitively expensive to implement since it necessitates highly specialised risk analysis expertise, and it is not appropriate for small projects with low risk, as risk analysis is the key to success with this strategy  [10].
+
+ 
+Figure 7: Spiral Mode Methodology Process
+2.5.6 The Agile Development Model
+
+A collection of lightweight approaches known as "Agile" were created more than a decade ago to overcome the issues given by older methods. XP, Scrum, feature-driven development, and other methodologies are among them. Agile techniques attempt to overcome the limits of the dynamic nature of systems development projects by employing a variety of tactics. 
+Using two scientific ideas, agile techniques solve the fundamental issues of conventional system development: "Empirical process control" is one way. This can also be described as "soft-systems thinking." The alternative approach is to see system development as "complex adaptive systems" and build team structures and methodologies accordingly [13].  
+	Agile methodologies use the empirical process control model. Empirical process control is intended for processes that are poorly characterised, uncertain, and unrepeatable. It implements control by inspecting and adapting on a regular basis. Empirical process control approaches appear to be the greatest fit for delivering outcomes since software development processes are very complex and variable in nature.
+2.5.6.1 Scrum Methodology
+ 
+	During an ongoing development cycle, a Scrum sprint is a time-boxed period during which a defined set of features or capabilities is worked on. A sprint normally lasts between one and four weeks. During that period, the Scrum team's primary purpose is to deliver a product increment, which is a version of the product that comprises the prioritised and finished features and backlog items from the sprint [12].
+
+Consider a sprint as a means to divide down a project into manageable portions. What is worked on next at each step is determined by feedback and features prioritised throughout the backlog grooming and sprint planning processes.
+
+ 
+Figure 8: Scrum Methodology Process
+ 
+
+2.5.6.2 Extreme Programming (XP) Methodology
+
+	Extreme programming provides strategic direction software development best practises rather than the best approaches for finishing a project on time and on budget. Continuous integration, pair programming, and test-driven development are among the software development methodologies recommended. As a result, Scrum is widely used in agile software projects for project management, while XP is used for tactical procedures.
+ 
+Figure 8: Extreme Programming Methodology Process
+
+2.5.6.3 Feature Driven Development
+Feature driven development (FDD) was first used in the late 1990s to construct a large and sophisticated banking application project. The FDD methodology, unlike other approaches, focuses on the design and construction phases rather than the entire software development process.
+ 
+Figure 10: Feature Driven Development Methodology Process
+2.5.4 Findings
+Each approach, without a doubt, has its own strengths when it comes to handling a certain process. However, no approach is ideal, since each has its own set of compromises. As a result, it is critical to choose a technique that is appropriate for the project's nature.
+	Because this is a solo project, any approaches that are highly oriented toward teams, such as agile methodologies, will be excluded. Furthermore, because there is no risk connected with this project, the spiral model is not appropriate. This project's working environment does not have a business context, therefore Rational Unified Process may be omitted.
+	Waterfall may be excluded since it requires a long time to complete a project, whereas V-Shape is unneeded because any modifications made in the middle would require revisions to the test papers and requirement documents.
+As a result, parallel development is the method of choice for this project. Because the project includes numerous subsystems, event management system, a communication platform, and other systems that may be created in parallel, Parallel was chosen
+ 
+
+Chapter 3
+Methodology
+3.1 Introduction
+
+This section will go into the software development approach used to build the system, the tools used, and the project timeframe in depth. Aside from that, the project's work breakdown structure and Gantt chart will be proposed. Parallel development was chosen as the system development methodology for this project, and more information will be covered in the following section.
+3.2 Methodology: Parallel Development
+
+	For a variety of reasons, the parallel model was chosen from a pool of approaches to develop the project's application. The waterfall model, which is recognised for being exceedingly severe and rigid in the documentation phase, is the parallel model's precursor. The methodology chosen is appropriate since the project's requirements are well established and unlikely to alter in the near future.
+	Because the project's implementation timeframe is quite short (about 14 weeks), it's vital to ensure that the application is delivered in a timely manner while keeping the anticipated level of quality. The parallel model addresses the problems with large delays in the ancestry and waterfall models while keeping the waterfall model's quality..
+	Parallel development is breaking down larger projects into smaller projects in order to make milestones more achievable and to allow them to be developed concurrently without having to wait for the whole transition time between activities.
+	In a solo project, adopting parallel development implies I'll have to implement all of the subsystems by myself. However, before performing any other activities, the system's key functionalities would be given priority. 
+This is to ensure that the system will be able to deliver critical functions even if the time given is not met.
+
+3.3 PROJECT PLAN 
+Task Name	Start Date	End Date
+Planning		
+Determining the Project Title	06 May 2022	07 May 2022
+Conduct Feasibility Study	08 May 2022	18 May 2022
+Writing the Proposal	19 May 2022	29 May 2022
+Submitting First Draft of Proposal to Supervisor	12 Jun 2022	14 Jun 2022
+Submitting the Finalized Proposal	16 Jun 2022	17 Jun 2022
+Proposal Presentation	22 Jun 2022	23 Jun 2022
+Requirements Planning		
+Research Current Situation	28 Jun 2022	02 July 2022
+Define Requirements	03 July 2022	08 July 2022
+Finalize Requirements	09 July 2022	12 July 2022
+User Design		
+Produce Detailed System Area Model	13 July 2022	15 July 2022
+Develop Outline System Design	16 July 2022	20 July 2022
+Refine System Design	21 July 2022	26 July 2022
+Prepare Implementation Strategies	27 July 2022	31 March 2022
+Finalize System Design	01 August 2022	05 August 2022
+Obtain Approval for Construction	06 August 2022	10 August 2022
+Rapid Construction		
+Prepare for Rapid Construction	11 August 2022	 14 August 2022
+Construct System	15 August 2022	18 August 2022
+Generate Test Data and System Documents	19 August 2022	22 August 2022
+Prepare for Transition	23 August 2022	25 August 2022
+Verify System Construction	26 August 2022	02 Sept 2022
+Transition		
+Conduct User Training	03 Sept 2022	06 Sept 2022
+Perform Data Conversion	  07 Sept 2022	09 Sept 2022
+Install Production System	10 Sept 2022	13 Sept 2022
+Accept System Installation	14 Sept 2022	17 Sept 2022
+Conducting a user acceptance test	18 Sept 2022	23 Sept 2022
+Presenting the prototype of the application to the supervisor	24 Sept 2022	25 Sept 2022
+Report Writing		
+Writing of the report	30 Sept 2022	09 Octo 2022
+Modification and error-checking of the report	11 Octo 2022	14 Octo 2022
+Submission of the final report	16 Octo 2022	17 Octo 2022
+Preparation for final Viva session	19 Octo 2022	24 Octo 2022
+Viva session with both supervisors	26 Octo 2022	27 Octo 2022
+
+3.4 Gantt Chart
+
+  
+
+
+
+ 
+Chapter 4
+SYSTEM IMPLEMENTATION
+4.1 Introduction
+In this in the Introduction of system implementation, the system implementation process is described. The system implementation process is divided into three phases: the planning phase, the implementation phase and the post implementation phase. The planning phase is divided into three sub phases: the planning phase, the design phase and the development phase. The implementation phase is divided into two sub phases: the testing phase and the deployment phase. The post implementation phase is divided into two sub phases: the evaluation phase and the maintenance phase. The system implementation process is described in detail in the following sections.
+
+4.2 Project Setup
+
+The Project setup is only one directory, which is the root directory of the project. 
+The root directory contains the following sub directories: the source directory, the test directory, 
+the documentation directory, the build directory and the release directory. 
+The source directory contains the source code of the project. 
+The test directory contains the test code of the project. 
+The documentation directory contains the documentation of the project. 
+The build directory contains the build files of the project. 
+The release directory contains the release files of the project.
+
+Node Package Manager (NPM) is a package manager for the JavaScript programming language. 
+It is the default package manager for the JavaScript runtime environment Node.js. 
+It consists of a command line client, also called npm, 
+and an online database of public and paid-for private packages, 
+alled the npm registry. The registry is accessed via the client, 
+and the available packages can be browsed and searched via the npm website. 
+The registry contains over 800,000 packages with over 3 million versions. 
+The registry is open to the public, and packages are available under open source licenses. 
+The registry is also used by the Node.js runtime environment to install packages. 
+NPM is used to install the following packages for the project:
+•	ant-design/icons
+•	headlessui/react
+•	heroicons/react
+•	tailwindcss/forms
+•	antd
+•	classnames
+•	react
+•	react-dom
+•	react-router-dom
+•	react-scripts
+•	web-vitals
+•	date-fns
+•	react-hook-form
+•	react-icons
+•	firebase
+•	react-router-dom
+
+4.3 Front End Development
+4.3.1 Application of UI/UX Theories
+The application of UI/UX theories is the process of applying the UI/UX theories to the project.
+when this process is applied to the project, the following theories are applied to the project:
+•	Visual Hierarchy
+•	Contrast
+•	Alignment
+•	Repetition
+•	Proximity
+•	White Space
+•	Colour
+•	Consistency
+•	Accessibility
+•	Usability
+•	Responsiveness
+•	Consistency
+•	Clarity
+
+several theories and trends are taken into consideration when designing the user interface of the project.
+inorder to make the user interface of the project more appealing to the users.
+
+When it comes to design and implement the actual screens for the web application,
+numerous UI/UX theories and trends was taken into account in order to provide the
+best experience in terms of aesthetic value and ease of use to most of the users as the
+user retention is highly influenced by their experience and the value that they get
+from using the system. For example, space theory including white space (also known
+as negative space), active space and passive space is applied extensively within the
+application to make it tidy and less crowded. 
+
+consistency is also applied to the application to make it more familiar to the users and
+to make it easier for them to use the system. For example, the same colour scheme is
+used throughout the application to make it more familiar to the users. The same
+colour scheme is also used in the application to make it more familiar to the users.
+
+
+4.3.2 Application of Design Patterns
+The application of design patterns is the process of applying the design patterns to the project.
+when this process is applied to the project, the following design patterns are applied to the project:
+•	Factory Method
+•	Abstract Factory
+•	Builder
+•	Prototype
+•	Singleton
+•	Adapter
+•	Bridge
+•	Composite
+•	Decorator
+•	Facade
+•	Flyweight
+
+4.3.3 SignUp Page
+The SignUp page is the page where the user can sign up for the system.
+but only the admin can create a new user account for the system. 
+the user can sign up for the system by entering the following information:
+•	First Name
+•	Last Name
+•	Email
+•	Password
+•	Confirm Password
+•	Role
+•	Phone Number
+•	Profile Picture
+•	About Me
+•	Job Title
+•	Company
+•	Location
+
+4.3.4 Login Page
+The Login page is the page where the user can login to the system. 
+the user can login to the system by entering the following information:
+•	Email
+•	Password
+when the user enters the correct email and password, the user will be redirected to the proposed system page. 
+when the user enters the wrong email and password, the user will be redirected to the login page.
+
+4.3.5 Proposed System Page
+The Proposed System page is the page where the user can view the proper page,
+based on the user role. 
+when the user is an admin, the user will be redirected to the dashboard page. 
+when the user is a student, the user will be redirected to the current-classes page. 
+when the user is a lecturer, the user will be redirected to the current-subjects page. 
+if the user is one of the above, the user will be redirected to the login page.
+
+the Layout component is the component that contains the header and the content of the page.
+in the header of the page, the user can view the following information:
+
+4.3.6 Dashboard Page
+The Dashboard page is the page where the admin can view the dashboard of the system.
+the dashboard page contains the following components:
+•	layout
+•	Content
+
+Layout contains the following resources:
+•	Links to the other pages
+•	Profile Picture
+•	Link to the profile page
+
+Layout will read the following resources from the database:
+userRole, userProfilePicture, userDisplayName. 
+
+when the userRole is identified as admin, the following links will be displayed:
+•	Dashboard
+•	Messenger
+•	Users
+•	Faculties
+•	Events
+•	Calender
+
+4.3.7 Dashboard 
+The Dashboard page is the page where the admin can view the dashboard of the system.
+the dashboard page contains the a summary card of the total number of students, lecturers, faculties and events.
+it also contains more other charts and graphs to show the summary of the system. This page is designed to give the admin a quick overview of the system.
+
+4.3.8 Messenger Page
+The Messenger page is the page were the admin can view the messenges they received from the users.
+the Messenger also allows the admin to send a message to the users. The page is designed to work like a chat application.
+which means when the users is using small device like iPad or mobile phone, the page will be displayed in a chat like format.
+when the user is using a large device like desktop or laptop, the page will be displayed in a normal format.
+
+
+4.3.9 Users Page
+The Users page is the page where the admin can view the users of the system. this includes the students, lecturers and other admins.
+the Users page contains the following components:
+•	Name
+•	Email
+•	Role
+•	faculty
+•	Program
+•	Year
+•	Status
+•	Actions
+This page also divides the users into four categories: students, lecturers, admins and all users.
+when the user clicks on the students, lecturers, admins or all users, the page will be filtered to show only the selected category of users.
+also it only shows the Add button for each category of users. 
+
+4.3.10 Faculties Page
+The Faculties page is the page where the admin can view the faculties of the system.
+the Faculties page contains the following components:
+•	Name of the faculty
+•	Head of the faculty
+•	Number of Programs in the faculty
+•	Number of Students in the faculty
+•	Primary location of the faculty
+•	Actions
+•	View Link to view the faculty
+
+These components will be displayed in a card format. to main the consistency of the application.
+when the user clicks on the view link, the user will be redirected to the faculty page.
+in the faculty page, the user can view the list of programs in the faculty. Also the user can add a new program to the faculty.
+just like the faculties page, the programs page will also be displayed in a card format. 
+in the program page, the user can view the list of subjects in the program. User can see the name of the subject, 
+lecturer, hours per week, number of students, location and code of the subject. Also the user can add a new subject to the program.
+when the user clicks on the view link, the user will be redirected to the subject page.
+In the subject page, the user can view resources of the subject. including lecturers, tutorials, assignments, quizzes and exams.
+this data will be displayed in a tabs format. this is to make the page more organized and easy to navigate.
+
+4.3.11 Events Page
+The Events page is the page where the admin can view the events of the system.
+the Events page contains the following components:
+•	Name of the event
+•	Location of the event
+•	Date of the event
+•	Time of the event
+•	Points of the event
+•	Tags of the event
+•	Categories of the event
+•	Link to view more details of the event
+
+These components will be displayed in a card format. and just like the faculties page, the events page will also be displayed in a card format. 
+when the user clicks on the view link, the user will be redirected to the event page. to view more details of the event.
+in event details page the user can view the following details of the event:
+•	Name of the event
+•	Location of the event
+•	Date of the event
+•	Time of the event
+•	Points of the event
+•	Tags of the event
+•	Categories of the event
+•	Speakers of the event
+•	Speakers Detail of the event
+•	Attendees of the event
+•	Google Form if the event has a google form
+•	Call to action button to register for the event
+•	Button to remove your self from the event
+
+when the user clicks on the register button, an api call will be made to the database to check if the user is already registered for the event.
+if the user is not registered for the event, the user will be registered for the event. else the user will be prompted with a message saying that the user is already registered for the event.
+when the user clicks on the remove button, an api call will be made to the database to check if the user is already registered for the event. 
+if the user is registered for the event, the user will be removed from the event. else the user will be prompted with a message saying that the user is not registered for the event.
+
+4.3.12 Calender Page
+The Calender page is the page where the admin can view the calender of the system, which includes the events of the system.
+
+All of the above mensions pages will only be accessible to the admin. if the user is not an admin, the user will be showed a 404 page.
+
+
+Student Navigation Section 
+
+If  the userRole is identified as student, the following links will be displayed:
+•	Current-Classes which contains the subjects that the student is currently enrolled in
+•	Messenger
+•	Events
+•	Calender
+•	All Subjects: which are the subjects that the student is enrolled in
+
+4.3.13 Current-Classes Page
+The Current-Classes page is the page where the student can view the subjects that the student is currently enrolled in.
+the Current-Classes page contains the following components:
+•	Name of the subject
+•	Location of the subject
+•	Number of students in the subject
+•	Number of hours per week
+•	Link to view more details of the subject
+
+These components will be displayed in a card format. and just like the faculties page, the Current-Classes page will also be displayed in a card format. 
+when the user clicks on the view link, the user will be redirected to the subject page. to view more details of the subject.
+
+4.3.14 Current Classes Details Page
+The Current Classes Details page is the page where the student can view the details of the subject that the student is currently enrolled in.
+the Current Classes Details page contains the following components:
+•	Overviews of the subject
+•	Lecture Notes of the subject
+•	Tutorials of the subject
+•	Assignments of the subject
+•	Quizzes of the subject
+•	Exams of the subject
+•	Forum of the subject
+•	Uploaded Materials by the current student
+
+These components will be displayed in a tabs format. to make the page more organized and easy to navigate.
+in addition, the materials of each tab is responsive. which means if the user is using a small device like iPad or mobile phone, 
+the materials will be displayed responsive. Finally there are buttons in each tab to add new materials to proper tab. Fore example, 
+if the student wants to add a forum post, the student will click on the add new post to the forum. and the student will be displayed
+a drawer to add the new post to the forum. if the student  adds a new post to the forum, an api call will be made to the database to add the new post to the forum.
+which includes the title of the post, the name of the student, the content of the post and the date of the post.
+
+
+
+IF the userRole is identified as lecturer, the following links will be displayed:
+•	Current-Subjects
+•	Messenger
+•	Events
+•	Calender
+•	All Subjects: which are the subjects that the lecturer has teached in the past
+
+4.3.15 Current-Subjects Page
+The Current-Subjects page is the page where the lecturer can view the subjects that the lecturer is currently teaching.
+the Current-Subjects page contains the following components:
+•	Name of the subject
+•	Location of the subject
+•	Number of students in the subject
+•	Number of hours per week
+•	Link to view more details of the subject
+
+These components will be displayed in a card format. and just like the faculties page, the Current-Subjects page will also be displayed in a card format. 
+when the user clicks on the view link, the user will be redirected to the subject page. to view more details of the subject.
+
+4.3.16 Current Subjects Details Page
+
+The Current Subjects Details page is the page where the lecturer can view the details of the subject that the lecturer is currently teaching.
+the Current Subjects Details page contains the following components:
+•	List of students in the subject
+•	Overviews of the subject
+•	Lecture Notes of the subject
+•	Tutorials of the subject
+•	Assignments of the subject
+•	Quizzes of the subject
+•	Exams of the subject
+•	Forum of the subject
+
+in the List of Student tab, the lecturer can view the list of students in the subject. including the name of the student,
+the ID of the student, emails of the student, submission rate of the student and action button to remove the student from the subject.
+when the lecturer clicks on the remove button, an api call will be made to the database to remove the student from the subject.
+when the lecturer clicks on the view button, the lecturer will be redirected to the student profile page. to view more details of the student.
+
+in Lectures Notes tab, the lecturer can view the lecture notes of the subject. including the name of the lecture note, the date of the lecture note,
+the lecturer who uploaded the lecture note and action button to remove the lecture note from the subject. Every tab has three buttons Download, Update and Delete.
+when the lecturer clicks on the download button, an api call will be made to the database to download the lecture note from the database.
+when the lecturer clicks on the update button, an api call will be made to the database to update the lecture note from the database.
+when the lecturer clicks on the delete button, an api call will be made to the database to delete the lecture note from the database.
+this is same in all tabs. except for the forum tab. in the forum tab, the lecturer can view the forum posts of the subject. including the title of the post,
+the name of the student who posted the post, the content of the post, the date of the post and action button to remove the post from the subject.
+just like the student the lecturer can also add a new post to the forum. when the lecturer clicks on the add new post button, the lecturer will be displayed
+a drawer to add the new post to the forum. if the lecturer adds a new post to the forum, an api call will be made to the database to add the new post to the forum.
+which includes the title of the post, the name of the lecturer, the content of the post and the date of the post.
+
+
+
+there are two versions of the layout page, dark mode and light mode. System will automatically detect the user’s preference and display the appropriate version of the layout page.
+
+
+
+
+when the userRole is identified as lecturer, the following links will be displayed:
+
+
+4.3.7 Current Classes Page
+
+
+
+
+
+
+References
+1.	Alameri, Jehad & Masadeh, Raja & Hamadallah, Elham & Bani, Haifa & Fakhouri, Hussam. (2020). Students' Perceptions of E-learning platforms (Moodle, Microsoft Teams and Zoom platforms) in The University of Jordan Education and its Relation to self-study and Academic Achievement During COVID-19 pandemic. 11. 13.
+2.	Jafari A., & Baylor A. (2012). From course management to course networking: Conceptualizing a new learning environment based on social networking.
+3.	Straumsheim, C. (2015). Brick by Brick: Educause releases a blueprint for next-generation learning management systems, recommending a “Lego approach.
+4.	Kurniati, S. A. (2020). Keberlanjutan Usahatani Bawang Merah Desa Sungai Geringging Kecamatan Kampar Kiri Kabupaten Kampar Provinsi Riau. Dinamika Pertanian, 35(3), 101–110. 
+5.	Sáiz-Manzanares, M.C., Marticorena-Sánchez, R., Rodríguez-Díez, J.J. et al. Improve teaching with modalities and collaborative groups in an LMS: an analysis of monitoring using visualisation techniques. J Comput High Educ 33, 747–778 (2021).
+6.	Alokluk, J. (2018) The Effectiveness of Blackboard System, Uses and Limitations in Information Management. Intelligent Information Management
+7.	Alsaqqa, Samar & Sawalha, Samer & Abdel-Nabi, Hiba. (2020). Agile Software Development: Methodologies and Trends. International Journal of Interactive Mobile Technologies (iJIM). 14. 246. 10.3991/ijim.v14i11.13269.
+8.	Sharma, Sheetal & Sarkar, Darothi & Gupta, Divya. (2012). Agile Processes and Methodologies: A Conceptual Study. International Journal on Computer Science and Engineering. 
+9.	Ilyin, A.V., Ilyin, V.D. (2021). Updated Methodology for Task Knowledge Based Development of Parallel Programs. In: Silhavy, R., Silhavy, P., Prokopova, Z. (eds) Data Science and Intelligent Systems. CoMeSySo 2021. Lecture Notes in Networks and Systems, vol 231. Springer, Cham.
+10.	Jiang, S., Feng, D., Lu, C., Li, J., & Chai, H. (2020). Research on the construction of the spiral evolutionary design methodology for a product service system based on existing products. Proceedings of the Institution of Mechanical Engineers, Part B: Journal of Engineering Manufacture, 234(4), 825–839
+11.	Alsaqqa, Samar & Sawalha, Samer & Abdel-Nabi, Hiba. (2020). Agile Software Development: Methodologies and Trends. International Journal of Interactive Mobile Technologies (iJIM). 14. 246. 10.3991/ijim.v14i11.13269
+12.	Kumar, Gaurav & Bhatia, Pradeep. (2014). Comparative Analysis of Software Engineering Models from Traditional to Modern Methodologies. International Conference on Advanced Computing and Communication Technologies, ACCT. 10.1109/ACCT.2014.73.
+ 
+
+
+
+reason for installing react: The reason for installing react is to 
+make the website more interactive and responsive. 
+React is a JavaScript library for building user interfaces. 
+React is a component-based library that helps us to build reusable UI components. 
+React is a declarative, efficient, and flexible JavaScript library for building user interfaces. 
+React is a JavaScript library for building user interfaces. 
+
+reason for installing react-router-dom: The reason for installing react-router-dom is to
+route react, it is a collection of navigational components that compose declaratively with the application.
+
+reason for installing react-dom: The reason for installing react-dom is to
+render react, it is the entry point to the DOM and server renderers for React.
+
+reason for installing react-scripts: The reason for installing react-scripts is to
+run react, it includes scripts and configuration used by Create React App.
+
+reason for installing web vitals: The reason for installing web vitals is to
+measure the performance of the website, it is a JavaScript library that provides a set of utilities to measure the real-world performance of your site.
+
+reason for installing AntD Design / Icons: The reason for installing AntD Design / Icons is to
+make the website more interactive and responsive, it is a design system with values 
+of Nature and Determinacy for better user experience of enterprise applications.
+
+reason for installing HeadLess UI / React: The reason for installing HeadLess UI / React is to
+make the website more interactive and responsive, it is a completely unstyled, fully accessible UI library that gives you the building blocks you need to build your own design system.
+
+reason for installing Hero Icons / React: The reason for installing Hero Icons / React is to
+make the website more interactive and responsive, it is a set of free MIT-licensed high-quality SVG icons for you to use in your web projects.
+
+reason for installing Tailwind CSS: The reason for installing Tailwind CSS is to
+make the website more interactive and responsive, it is a utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.
+
+reason for installing Antd: The reason for installing Antd is to
+make the website more interactive and responsive, it is a design system with values of Nature and Determinacy for better user experience of enterprise applications.
+
+reason for installing classnames: The reason for installing classnames is to
+make the website more interactive and responsive, it is a simple JavaScript utility for conditionally joining classNames together.
+
+reason for installing Date-fns: The reason for installing Date-fns is to
+make the website more interactive and responsive, it is a modern JavaScript date utility library. that 
+provides the most comprehensive, yet simple and consistent toolset for manipulating JavaScript dates in a browser & Node.js.
+
+reason for installing Firebase: The reason for installing Firebase is to
+make the website more interactive and responsive, it is the backend of the website and the database of the website.
+alot of the data is stored in firebase. firebase is a platform developed by Google for creating mobile and web applications.
+
