@@ -95,7 +95,7 @@ const EventsDetails = () => {
         w-full h-full
         ">
             <div className="flex flex-col justify-center items-center p-4">
-                <img src='https://i.pravatar.cc/300' alt="profile" className="rounded-lg w-64 h-64" />
+                <img src='https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1744&q=80' alt="profile" className="rounded-lg w-64 h-64 object-cover" />
             </div>
 
             <div className="flex flex-col justify-start items-start p-4 max-w-2xl">

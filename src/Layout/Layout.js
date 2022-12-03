@@ -6,6 +6,7 @@ import {MenuOutlined, BellOutlined, CloseOutlined } from '@ant-design/icons'
 import classNames from 'classnames'
 import { useNavigate } from 'react-router-dom';
 import { UserAuth } from '../context/AuthContext';
+import logo from '../assets/images/logo.png';
 
 const userData = {
   name: 'Ahmed',
@@ -75,34 +76,34 @@ const Layout = () => {
   return (
     <div className='dark:bg-gray-900 bg-gray-100 h-[calc(100%+2rem)]]'>
         <div className="min-h-full ">
-        <Disclosure as="nav" className="bg-gray-800 ">
+        <Disclosure as="nav" className="bg-gray-500 dark:bg-gray-800">
           {({ open }) => (
             <>
               <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="flex h-16 items-center justify-between">
                   <div className="flex items-center">
-                    <div className="flex-shrink-0 bg-gray-900">
+                    <div className="flex-shrink-0 ">
                       <img
                         className="h-8 w-8"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                        alt="Your Company"
+                        src={logo}
+                        alt="Retudy LMS"
                       />
                     </div>
                     <div className="hidden md:block">
                       <div className="ml-10 flex items-baseline space-x-4">
                         
                         {userRole === 'admin' && AdminNavigation.map((item) => (
-                          <Link to={item.href} key={item.name} className={classNames(item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'px-3 py-2 rounded-md text-sm font-medium')}>
+                          <Link to={item.href} key={item.name} className={classNames(item.current ? 'dark:bg-gray-900 dark:text-white bg-gray-400 text-black' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'px-3 py-2 rounded-md text-sm font-medium')}>
                             {item.name}
                           </Link>
                         ))}
                         {userRole === 'student' && StudentNavigation.map((item) => (
-                          <Link to={item.href} key={item.name} className={classNames(item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'px-3 py-2 rounded-md text-sm font-medium')}>
+                          <Link to={item.href} key={item.name} className={classNames(item.current ? 'dark:bg-gray-900 dark:text-white bg-gray-400 text-black' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'px-3 py-2 rounded-md text-sm font-medium')}>
                             {item.name}
                           </Link>
                         ))}
                         {userRole === 'teacher' && TeacherNavigation.map((item) => (
-                          <Link to={item.href} key={item.name} className={classNames(item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'px-3 py-2 rounded-md text-sm font-medium')}>
+                          <Link to={item.href} key={item.name} className={classNames(item.current ? 'dark:bg-gray-900 dark:text-white bg-gray-400 text-black' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'px-3 py-2 rounded-md text-sm font-medium')}>
                             {item.name}
                           </Link>
                         ))}
@@ -114,57 +115,14 @@ const Layout = () => {
                   </div>
                   <div className="hidden md:block">
                     <div className="ml-4 flex items-center md:ml-6">
-                    <Menu as="div" className="relative ml-3">
-
-                      <Menu.Button
-                        type="button"
-                        className="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-                      >
-                        <span className="sr-only">View notifications</span>
-                        <BellOutlined className="h-6 w-6" aria-hidden="true" />
-                        
-                      </Menu.Button>
-                      <Transition
-                          as={Fragment}
-                          enter="transition ease-out duration-100"
-                          enterFrom="transform opacity-0 scale-95"
-                          enterTo="transform opacity-100 scale-100"
-                          leave="transition ease-in duration-75"
-                          leaveFrom="transform opacity-100 scale-100"
-                          leaveTo="transform opacity-0 scale-95"
-                        >
-                          <Menu.Items
-                            static
-                            className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
-                          >
-                            <div className="py-1">
-                              {Usernotifications.map((item) => (
-                                <Menu.Item key={item.name}>
-                                  {({ active }) => (
-                                    <Link
-                                      to={item.href}
-                                      className={classNames(
-                                        active ? 'bg-gray-100' : '',
-                                        'block px-4 py-2 text-sm text-gray-700'
-                                      )}
-                                    >
-                                      {item.name}
-                                    </Link>
-                                  )}
-                                </Menu.Item>
-                              ))}
-                            </div>
-                          </Menu.Items>
-                        </Transition>
-                      
-                    </Menu>
+                    
                       
 
 
                       {/* Profile dropdown */}
                       <Menu as="div" className="relative ml-3">
                         <div>
-                          <Menu.Button className="flex max-w-xs items-center justify-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                          <Menu.Button className="flex max-w-xs items-center justify-center rounded-full dark:bg-gray-800 bg-gray-500 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                             <span className="sr-only">Open user menu</span>
                             <p className="block px-4 py-2 mt-3 text-sm text-white
                             ">{user.displayName}</p>
@@ -274,7 +232,7 @@ const Layout = () => {
                   ))}
                   
                 </div>
-                <h1 className="text-white text-center">User</h1>
+                
                 <div className="border-t border-gray-700 pt-4 pb-3">
                   <div className="flex items-center px-5">
                     <div className="flex-shrink-0">
@@ -287,13 +245,7 @@ const Layout = () => {
                       </div>
                       <div className="text-sm font-medium leading-none text-gray-400">{user.email}</div>
                     </div>
-                    <button
-                      type="button"
-                      className="ml-auto flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-                    >
-                      <span className="sr-only">View notifications</span>
-                      <BellOutlined className="h-6 w-6" aria-hidden="true" />
-                    </button>
+                    
                   </div>
                   <div className="mt-3 space-y-1 px-2">
                     <span onClick={handleLogout} className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700">Sign out</span>

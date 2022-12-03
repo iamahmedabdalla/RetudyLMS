@@ -423,6 +423,21 @@ This section will go into the software development approach used to build the sy
 	In a solo project, adopting parallel development implies I'll have to implement all of the subsystems by myself. However, before performing any other activities, the system's key functionalities would be given priority. 
 This is to ensure that the system will be able to deliver critical functions even if the time given is not met.
 
+3.3 Planning 
+A literature research was carried out to study the Background
+
+3.4 Questionnaire
+
+The questionnaire was used to evaluate the system. The questionnaire was distributed to the different types of users of the system including students and teachers and the responses were used to measure the user satisfaction with the system. 
+The porpuse of these questionnaires was to get feedback from the users of the system. The questionnaire was distributed to the different types of users of the system including students and teachers and the responses were used to measure the user satisfaction with the system.
+Instead of asking users what do they think, some of the respondents were given 
+
+5. System Architecture
+5.1 Firebase Architecture
+
+This is built using Firebase Architecture which is different from traditional architectures, this 
+React is a JavaScript library for building user interfaces. which made up 
+
 3.3 PROJECT PLAN 
 Task Name	Start Date	End Date
 Planning		

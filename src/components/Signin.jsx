@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { UserAuth } from '../context/AuthContext';
 import { LockClosedIcon } from '@heroicons/react/20/solid'
-import { message } from 'antd';
+import logo from '../assets/images/logo.png';
 
 const Signin = () => {
   const [email, setEmail] = useState('');
@@ -28,18 +28,18 @@ const Signin = () => {
         <div>
           <img
             className="mx-auto h-12 w-auto dark:bg-inherit"
-            src="https://tailwindui.com/img/logos/mark.svg?color=sky&shade=600"
-            alt="Your Company"
+            src={logo}
+            alt="Retudy LMS"
           />
           <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900 dark:text-white">
            Sign in to your account
           </h2>
-          <p className="mt-2 text-center text-sm text-gray-600 dark:text-gray-400">
+          {/* <p className="mt-2 text-center text-sm text-gray-600 dark:text-gray-400">
             or Create a new account
             <Link to='/signup' className="font-medium text-sky-600 hover:text-sky-500">
               {' '}here
             </Link>
-          </p>
+          </p> */}
         </div>
         <form onSubmit={handleSubmit}>
           <input type="hidden" name="remember" defaultValue="true" />

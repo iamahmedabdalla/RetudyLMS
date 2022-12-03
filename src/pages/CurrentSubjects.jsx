@@ -54,7 +54,7 @@ const CurrentSubjects = () => {
                                 
                               " key={index}>
                                 <div className="flex flex-row justify-start px-3 pt-2 mb-4 rounded-t-lg border-b-2 border-gray-500">
-                                    <img src="https://i.pravatar.cc/300" alt="student" className='w-20 h-20 rounded-lg ' />
+                                    <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="student" className='w-20 h-20 rounded-lg ' />
                                     <div className="flex flex-col justify-start items-start  px-3 pt-2">
 
                                         <h1 className="text-md font-bold text-gray-900 dark:text-white ml-2">
@@ -127,14 +127,14 @@ const CurrentSubjects = () => {
     function TutorialCard() {
         return (
             <>
-                <div className="">
-                    <div className="flex flex-row bg-white dark:border dark:border-sky-500 dark:bg-slate-900 rounded-lg shadow-lg   w-72 h-40">
+                <div className="border-1 border:bg-blue-100">
+                    <div className="flex flex-row bg-white dark:border dark:border-sky-500 dark:bg-slate-900 rounded-lg shadow-lg w-72 h-40">
                         <div className="m-3">
                             <div className="flex flex-col justify-start items-center">
                                 <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Java Programming 1</h1>
                             </div>
                             <div className="flex flex-row justify-start items-center gap-5">
-                                <img src="https://i.pravatar.cc/300" alt="student" className='w-20 h-20 rounded-lg ' />
+                                <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="student" className='w-20 h-20 rounded-lg ' />
                                 <div className="flex flex-col justify-start items-start">
                                     <p className="text-xl font-bold text-emerald-500"> 15 Submissions
                                     </p>
@@ -241,7 +241,7 @@ const CurrentSubjects = () => {
     function TutorialsCard() {
         return (
             <>
-                <h1 className="text-2xl font-bold text-gray-900  dark:text-white ml-4"> Today's Tutorials </h1>
+                <h1 className="text-2xl mt-10 font-bold text-gray-900  dark:text-white ml-4"> Today's Tutorials </h1>
                 <div className="overflow-x-auto ">
                     <div className="flex flex-row gap-4 ">
                         <TutorialCard />
@@ -256,7 +256,7 @@ const CurrentSubjects = () => {
 
     return (
         <div className="flex flex-col ">
-            <div className="mb-5 ">
+            <div className="mx-15 p-10 ">
                 <SubjectsCard />
                 <TutorialsCard />
 

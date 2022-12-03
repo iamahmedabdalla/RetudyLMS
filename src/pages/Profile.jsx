@@ -21,6 +21,7 @@ const Profile = () => {
 
   const [fname, setFname] = useState('');
   const [lname, setLname] = useState('');
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [userEducation, setUserEducation] = useState('');
   const [userExperience, setUserExperience] = useState('');
@@ -30,6 +31,8 @@ const Profile = () => {
   const [userCoverPhoto, setUserCoverPhoto] = useState('');
 
   const [error, setError] = useState('')
+  const [loading, setLoading] = useState(false)
+  const [success, setSuccess] = useState(false)
 
  // Fetch user data from the database
   useEffect(() => {
@@ -48,21 +51,18 @@ const Profile = () => {
       });
     });
     return unsubscribe;
-  }, [user.uid]);
+  }, []);
 
   const message = (type, text) => {
     return <Alert message={text} type={type} showIcon />;
   };
 
 
-
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const updatedUser = {
-        fname,
-        lname,
+      await updateDoc(doc(db, "users", user.uid), {
+        name: name,
         email,
         userEducation,
         userExperience,
@@ -70,23 +70,20 @@ const Profile = () => {
         userAbout,
         userPortfolio,
         userCoverPhoto,
-      };
-      await updateDoc(doc(db, "users", user.uid), updatedUser);
-      setUser(updatedUser);
-      navigate('/profile');
-      Alert = message('success', 'Profile updated successfully');
+      });
+      setSuccess('Profile updated successfully')
     } catch (error) {
       setError(error.message);
-      
     }
-  }
+  };
+
 
   return (
     <>
         <div className="mt-20 sm:mt-0 max-w-[900px] mx-auto my-16">
-          <div className="md:grid md:grid-cols-3 md:gap-6">
+          <div className="md:grid md:grid-cols-3 md:gap-6 ">
             <div className="md:col-span-1">
-              <div className="px-4 sm:px-0">
+              <div className="px-4 sm:px-0 ">
                 <h3 className="text-lg font-medium leading-6 text-gray-900">Profile</h3>
                 <p className="mt-1 text-sm text-gray-600">
                   Change your profile information.
@@ -108,7 +105,7 @@ const Profile = () => {
                           name="first-name"
                           id="first-name"
                           value={user.displayName}
-                          onChange={(e) => setFname(e.target.value)}
+                          onChange={(e) => setName(e.target.value)}
                           autoComplete="given-name"
                           className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                         />
@@ -162,15 +159,7 @@ const Profile = () => {
                         />
                       </div>
                     </div>
-                    <div className="grid grid-cols-6 gap-6">
-                      <div className="col-span-6 sm:col-span-3">
-                        <label htmlFor="your-cover-photo" className="block text-sm font-medium text-gray-700">
-                          Your Cover Photo
-                        </label>
-                        <img src={userCoverPhoto} alt="cover" className="w-20 h-20 rounded-full" />
-
-                      </div>
-                    </div>
+                    
                     <div className="grid grid-cols-6 gap-6">
                       <div className="col-span-6 sm:col-span-3">
                         <label htmlFor="your-education" className="block text-sm font-medium text-gray-700">
@@ -222,6 +211,12 @@ const Profile = () => {
                   </div>
                 </div>
                 <div className="bg-gray-50 px-4 py-3 text-right sm:px-6">
+                  {
+                    error && <p className="text-red-500">{error}</p>
+                  }
+                  {
+                    success && <p className="text-green-500">{success}</p>
+                  }
                   <button
                     type="submit"
                     className="inline-flex justify-center rounded-md border border-transparent bg-sky-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-sky-700 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2"

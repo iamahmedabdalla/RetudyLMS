@@ -12,6 +12,7 @@ const Messenger = () => {
                 <ChatSearch />
                 <ChatPerson />
                 <ChatPerson />
+                <ChatPerson />
             </div>
         )
     }
@@ -31,10 +32,10 @@ const Messenger = () => {
                     <div className="flex flex-row justify-center gap-3 items-center w-full ">
                         <img className="w-14 h-14 rounded-full" src="https://picsum.photos/200" alt="profile" />
                         <div className="hidden flex-col w-full h-full  sm:flex md:flex xl:flex">
-                                <h1 className="text-lg font-bold">Ahmed</h1>
+                                <h1 className="text-lg font-bold dark:text-gray-200">Ahmed</h1>
                                 <div className="flex flex-row w-full justify-between ">
                                 <p className="text-sm dark:text-gray-300 text-gray-900">Hi Ozama</p>
-                                <p className="text-sm ">1 hour ago</p>
+                                <p className="text-sm dark:text-gray-300">1 hour ago</p>
                         </div>
                     </div>
 
@@ -62,8 +63,8 @@ const Messenger = () => {
             <div className="flex flex-row w-full h-16 bg-gray-400 dark:bg-gray-700">
                 <div className="flex flex-row w-full h-full items-center px-4 gap-3">
                     <img className="w-12 h-12 rounded-full" src="https://picsum.photos/200" alt="profile" />
-                    <div className="flex flex-col w-full h-full">
-                        <h1 className="text-lg font-bold">Ahmed</h1>
+                    <div className="flex flex-col w-full h-full ">
+                        <h1 className="text-lg font-bold dark:text-gray-300">Ahmed</h1>
                         <p className="text-sm text-green-400">Active now</p>
                     </div>
                 </div>
@@ -77,12 +78,12 @@ const Messenger = () => {
                 <div className="flex flex-col w-full h-full p-3 gap-3 ">
                     <ChatSender />
                     <ChatSender />
+                    
                     <div className="flex flex-row  w-full h-full justify-end">
                         <ChatReciever />
                     </div>
                     <ChatSender />
                     <ChatSender />
-                    <ChatSenderImg />
                     <div className="flex flex-row w-full gap-4 h-full justify-end">
                         <ChatReciever />
                     </div>

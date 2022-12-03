@@ -18,7 +18,7 @@ import { UserAuth } from '../context/AuthContext';
 
 const Events = () => {
 const navigate = useNavigate();
-  const { currentUser, user } = UserAuth();
+  const { currentUser, user, userRole } = UserAuth();
   const userUID = user.uid;
 
   const [eventsList, setEventsList] = useState([]);
@@ -98,24 +98,22 @@ const navigate = useNavigate();
         <>
             <div>
                 {/* <h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Finding Project</span> Made Easy.</h1> */}
-                <div className="flex justify-between  sm:flex-row">
+                <div className="flex justify-between  sm:flex-row p-10">
                     <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Events</h1>
                     <div className="flex justify-end">
-                        <button 
+                        {userRole === "admin" && <button 
                             onClick={() => navigate('/add-events')}
                             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                             Add Event
                         </button>
+                        }
                     </div>
                 </div>
                 
-                <div className=" 
-               
-        flex flex-row justify-start rounded-t-lg flex-wrap 
-        sm:flex-row sm:bg-red-300 sm:justify-start sm:px-4 sm:pt-5 sm:rounded-t-lg sm:flex-wrap
-        md:flex-col md:bg-lime-300 md:justify-start md:px-4 md:pt-5 md:rounded-t-lg md:flex-wrap
-        lg:flex-row lg:bg-sky-300 lg:justify-start lg:rounded-t-lg lg:flex-wrap
-        xl:flex-row xl:bg-gray-300 xl:justify-start xl:rounded-t-lg xl:flex-wrap
+                <div className="flex flex-row justify-start rounded-t-lg flex-wrap sm:flex-row  sm:justify-start sm:px-4 sm:pt-5 sm:rounded-t-lg sm:flex-wrap
+        md:flex-col  md:justify-start md:px-4 md:pt-5 md:rounded-t-lg md:flex-wrap
+        lg:flex-row  lg:justify-start lg:rounded-t-lg lg:flex-wrap
+        xl:flex-row  xl:justify-start xl:rounded-t-lg xl:flex-wrap
         ">
                     <div className="flex flex-row justify-center rounded-t-lg flex-wrap ">
                         <EventComponent />

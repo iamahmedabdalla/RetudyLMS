@@ -62,7 +62,7 @@ const Faculties = () => {
 
     return (
         <>
-            <div className="mt-20 sm:mt-0 w-full mx-auto my-16 dark:bg-gray-900">
+            <div className="mt-20 sm:mt-0 w-full mx-auto my-16 dark:bg-gray-900 p-10">
 
                 <div className="md:grid  md:gap-6">
                     <div class="md:col-span-1">

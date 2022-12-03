@@ -503,7 +503,7 @@ const Users = () => {
     }
     return (
         <>
-           <div className="flex flex-col w-full h-full dark:bg-gray-900">
+           <div className="flex flex-col w-full h-full dark:bg-gray-900 p-4">
            <UserTable />
               </div>    
         </>
